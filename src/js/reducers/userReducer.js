@@ -27,7 +27,7 @@ export default function reducer(state = initialState, action) {
         case 'FETCH_USER_FULFILLED': {
             return {
                 ...state,
-                user: action.user,
+                user: action.payload,
                 fetching: false,
                 fetched: true
             }
